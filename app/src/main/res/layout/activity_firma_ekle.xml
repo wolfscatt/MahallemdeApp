@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/firma_ekleme_2"
+    tools:context=".FirmaEkleActivity">
+
+    <ImageView
+        android:id="@+id/imageViewFirmaEkle"
+        android:layout_width="85dp"
+        android:layout_height="72dp"
+        android:layout_margin="20dp"
+        android:visibility="visible"
+        app:srcCompat = "@drawable/gorsel_sec"
+        app:layout_constraintBottom_toTopOf="@+id/button_gonder"
+        app:layout_constraintEnd_toStartOf="@+id/button_gorsel_sec"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/editTextTelefon"
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="TELEFON"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextAdres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextIl"
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="İL"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextIlce"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextFirmaAdi"
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:layout_margin="30dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Firma-İşyeri Adı"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextIl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMahalle"
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:layout_margin="27dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="MAHALLE"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTelefon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextIlce"
+        android:layout_width="300dp"
+        android:layout_height="41dp"
+        android:layout_margin="32dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="İLÇE"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/editTextMahalle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/firma_ekleme_text"
+        android:layout_width="297dp"
+        android:layout_height="44dp"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:text="FİRMA EKLEME SAYFASI"
+        android:textColor="@color/siyah"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextFirmaAdi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"></TextView>
+
+    <EditText
+        android:id="@+id/editTextAdres"
+        android:layout_width="300dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="523dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="İşyeri Adresi"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_gorsel_sec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_gonder"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gonder_button_background"
+        android:onClick="firmaEkle"
+        android:text="Gönder"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_gorsel_sec" />
+
+    <Button
+        android:id="@+id/button_gorsel_sec"
+        android:layout_width="285dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="gorselSec"
+        android:text="Görsel yüklemek için tıklayınız"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:background="@drawable/gorsel_button_background"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button_gonder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdres" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
